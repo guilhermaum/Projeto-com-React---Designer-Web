@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 
 export default function RestaurantCard({ restaurante }) {
   return (
-    <div className="bg-white rounded-2xl shadow-md overflow-hidden hover:scale-105 transition-transform mt-4">
+    <div className="bg-white rounded-2xl shadow-md overflow-hidden hover:scale-105 transition-transform mt-4 mb-4">
       <img
         src={restaurante.imagem}
         alt={restaurante.nome}

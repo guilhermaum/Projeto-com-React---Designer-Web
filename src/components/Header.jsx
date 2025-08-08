@@ -49,7 +49,7 @@ function Header() {
               Conheça um lado diferente do Ceará como você nunca viu. Viçosa te
               leva para um lugar mágico e encantador!
             </p>
-            <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-full text-lg font-semibold">
+            <button className="bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-full text-lg font-semibold">
               Confira nossas experiências
             </button>
           </div>

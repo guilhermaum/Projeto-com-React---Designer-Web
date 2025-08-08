@@ -1,11 +1,15 @@
 import { useState, useEffect } from "react";
 
 const fotos = [
-  "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80",
-  "https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=800&q=80",
-  "https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=800&q=80",
-  "https://images.unsplash.com/photo-1449034446853-66c86144b0ad?w=620&auto=format&fit=crop&q=60&ixlib=rb-4.1.0",
-  "https://images.unsplash.com/photo-1519985176271-adb1088fa94c?auto=format&fit=crop&w=800&q=80",
+  "/images/img-01.jpg",
+  "/images/img-02.jpg",
+  "/images/img-03.jpg",
+  "/images/img-04.jpg",
+  "/images/img-05.jpg",
+  "https://www.guiadoturismobrasil.com/up/img/1446908713.jpg",
+  "https://i0.wp.com/direitoce.com.br/wp-content/uploads/2020/09/Vi%C3%A7osa-do-Cear%C3%A1-1.jpg?fit=800%2C445&ssl=1",
+  "https://pousadastop.com.br/photospousadas/pousadavillagevicosa/1.jpg",
+  "https://mapacultural.secult.ce.gov.br/files/agent/16510/1888fc4a-6839-4f2e-a86c-b2ac337279cf.jpg",
 ];
 
 export default function CarrosselFotos() {
@@ -49,7 +53,7 @@ export default function CarrosselFotos() {
   const currentGroup = Math.floor(startIndex / visibleCount);
 
   return (
-    <div className="mt-6 max-w-5xl mx-auto relative select-none">
+    <div className="mt-6 max-w-full mx-auto relative select-none">
       <div className="flex space-x-4 overflow-hidden rounded-lg">
         {visibleFotos.map((foto, i) => (
           <img

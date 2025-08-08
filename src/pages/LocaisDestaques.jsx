@@ -4,6 +4,7 @@ import LocalCard from "../components/LocalCard";
 import Header from "../components/Header";
 import Pictures from "../components/Pictures";
 import RestaurantCard from "../components/RestaurantCard";
+import Footer from "../components/Footer";
 
 export default function LocaisDestaque() {
   return (
@@ -33,12 +34,14 @@ export default function LocaisDestaque() {
         <p className="font-roboto text-center">
           Descubra a gastronomia local e aproveite
         </p>
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 mb-6">
           {restaurantes.map((r) => (
             <RestaurantCard key={r.id} restaurante={r} />
           ))}
         </div>
       </div>
+
+      <Footer />
     </>
   );
 }
